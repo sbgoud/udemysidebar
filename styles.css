@@ -1,0 +1,144 @@
+body{
+    display: block;
+    text-align: left;
+
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+    
+}
+
+#sec1head, #sec2head, 
+#sec3head ,
+#sec4head ,
+#sec5head, 
+#sec6head  {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+
+
+
+
+main{
+    
+    background: #f7f9fa;
+    width: 400px;
+    
+    
+    margin-right: 0;
+    margin-left: auto;
+}
+
+h3{
+    background-color: white;
+    position: relative;
+    border: 1px solid #d1d7dc;
+    padding: 16px;
+    margin: 0;
+    margin-right: 0;
+    margin-left: auto;
+    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+   
+}
+
+
+
+ul{
+    display: none;
+}
+#sec2, #sec1, #sec3, #sec4, #sec5, #sec6 {
+    font-family: udemy sans,sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    width: auto;
+    border: 1px solid #d1d7dc;
+    margin: 0;
+    border-top: 0;
+    
+}
+
+p{
+    font-size: small;
+}
+
+.downimage {
+    margin-top: 30px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    background: url(/chevron-down-outline.svg) no-repeat;
+    
+}
+
+section{
+    margin-top: 10px;
+    
+    padding: 10px;
+    padding-right: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=checkbox]{
+    display: none;
+}
+
+
+ul{
+    position: relative;
+    list-style: none;
+    padding:0;
+    display: none;
+}
+
+ul li{
+    
+    background-color: #fff;
+    color: #4FB9A7;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: #4FB9A7;
+    color: #FFF;
+}
+
+
+
+
+
+
+input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+
+input[type=checkbox]:checked ~ label .downimage {
+    margin-top: 30px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    background: url(/chevron-up-outline.svg) no-repeat;
+    
+} /*what to do when there are multiple checkboxes*/
